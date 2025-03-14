@@ -5,16 +5,16 @@ int main() {
 	int *ptr_a = &a;
 	int *ptr_b = &b;
 
-	printf("Введите значение переменной a: ");
+	printf("Enter the value a: ");
 	scanf("%d", &a);
-	printf("Введите значение переменной b: ");
+	printf("Enter the value of b: ");
 	scanf("%d", &b);
 
 	*ptr_a *= 2;
 	*ptr_b /= 2;
 
-	printf("Новое значение a: %d\n", a);
-	printf("Новое значение b: %d\n", b);
+	printf("New a: %d\n", a);
+	printf("New b: %d\n", b);
 
 	return 0;
 }

@@ -3,20 +3,22 @@
 
 int main() {
 	int n;
-	printf("Введите размер массива: ");
+	printf("Enter the size of array: ");
 	scanf("%d", &n);
 
 	int *a = (int *)malloc(n * sizeof(int));
 
 	for (int i = 0; i < n; i++) {
-		printf("Введите элемент a[%d]: ", i);
+		printf("Enter the element a[%d]: ", i);
 		scanf("%d", &a[i]);
 	}
 
 
 	int count = 0;
 	float sum = 0;
-	printf("Номера отрицательных элементов: ");
+
+	printf("Numbers of negative elements: ");
+
 	for (int i = 0; i < n; i++) {
 	if (a[i] < 0) {
 		printf("%d ", i);
@@ -27,11 +29,11 @@ int main() {
 	printf("\n");
 
 	if (count > 0) {
-		float average = sum / count;
-		printf("Среднее арифметическое отрицательных элементов: %.2f\n", average);
+		float avg = sum / count;
+		printf("Avarage of negative elements: %.2f\n", avg);
 	} 
 	else {
-		printf("Отрицательных элементов нет.\n");
+		printf("Empty.\n");
 	}
 
 	return 0;

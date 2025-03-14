@@ -18,14 +18,14 @@ void selectionSort(float *arr, int n) {
 
 int main() {
 	int n;
-	printf("Введите размер массива b: ");
+	printf("Enter the size of array b: ");
 	scanf("%d", &n);
 
 	float *b = (float *)malloc(n * sizeof(float));
 	float *c = (float *)malloc(n * sizeof(float));
 	
 	for (int i = 0; i < n; i++) {
-		printf("Введите элемент b[%d]: ", i);
+		printf("Enter the element b[%d]: ", i);
 		scanf("%f", &b[i]);
 	}
 
